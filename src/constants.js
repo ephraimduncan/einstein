@@ -6,4 +6,7 @@ module.exports = {
   sq: (num) => {
     return num ** 2;
   },
+  cube: (num) => {
+    return Math.pow(num, 3);
+  },
 };

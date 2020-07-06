@@ -1,72 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Pythagorean Property - Sine and Cosine",
-    "equation": "\\sin ^2 \\theta + \\cos ^2 \\theta = 1"
-  },
-
-  {
-    "id": 5,
-    "title": "Double Angle Identity - Sine",
-    "equation": "\\sin 2\\theta = 2\\sin \\theta \\cos \\theta"
-  },
-  {
-    "id": 6,
-    "title": "Double Angle Identity - Cosine",
-    "equation": "\\cos 2\\theta = \\cos ^2 \\theta - \\sin ^2 \\theta = 2\\cos ^2 \\theta - 1"
-  },
-  {
-    "id": 7,
-    "title": "Half Angle Identity - Sine",
-    "equation": "\\sin \\frac{\\theta }{2} = \\sqrt {\\frac{{1 - \\cos \\theta }}{2}}"
-  },
-  {
-    "id": 8,
-    "title": "Half Angle Identity - Cosine",
-    "equation": "\\cos \\frac{\\theta }{2} = \\sqrt {\\frac{{1 + \\cos \\theta }}{2}}"
-  },
-  {
-    "id": 9,
-    "title": "Sum and Difference of Angles Identity - Sine",
-    "equation": "\\sin \\left( {\\theta _1 \\pm \\theta _2 } \\right) = \\sin \\theta _1 \\cos \\theta _2 \\pm \\cos \\theta _1 \\sin \\theta _2"
-  },
-  {
-    "id": 10,
-    "title": "Sum and Difference of Angles Identity - Cosine",
-    "equation": "\\cos \\left( {\\theta _1 \\pm \\theta _2 } \\right) = \\cos \\theta _1 \\cos \\theta _2 \\mp \\sin \\theta _1 \\sin \\theta _2"
-  },
-  {
-    "id": 11,
-    "title": "Additive Identity Property",
-    "equation": "{\\rm{a + 0 = a}} "
-  },
-  {
-    "id": 12,
-    "title": "Additive Inverse Property",
-    "equation": "a + \\left( { - a} \\right) = 0 "
-  },
-  {
-    "id": 13,
-    "title": "Associative Property of Addition",
-    "equation": "\\left( {a + b} \\right) + c = a + \\left( {b + c} \\right) "
-  },
-  {
-    "id": 14,
-    "title": "Commutative Property of Addition",
-    "equation": "a + b = b + a "
-  },
-  {
-    "id": 15,
-    "title": "Definition of Subtraction",
-    "equation": "a - b = a + \\left( { - b} \\right) "
-  },
-  {
-    "id": 16,
-    "title": "Multiplicative Identity",
-    "equation": "a \\times 1 = a "
-  },
-
-  {
     "id": 62,
     "title": "Area of a circle",
     "equation": "A = \\pi r^2"
@@ -162,7 +95,7 @@
     "equation": "V = Bh"
   },
   {
-    "id": 81,
+    "id": 810,
     "title": "Ideal gas equation",
     "equation": "PV = nRT"
   },
