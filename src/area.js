@@ -44,4 +44,20 @@ class Area {
   areaTriangle(b, h) {
     return 0.5 * b * h;
   }
+
+  surfaceAreaSphere(r) {
+    return 4 * pi * sq(r);
+  }
+
+  surfaceAreaCylinder(r, h) {
+    return 2 * pi * sq(r) + 2 * pi * r * h;
+  }
+
+  surfaceAreaCuboid(l, w, h) {
+    return 2(l * w + l * h + w * h);
+  }
+
+  surfaceAreaCube(l) {
+    return 6 * sq(l);
+  }
 }
