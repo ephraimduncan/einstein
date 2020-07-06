@@ -1,47 +1,47 @@
 const { pi, sqrt, sq } = require('./constants');
 
 class Area {
-  areaCircle(radius) {
-    return pi * sq(radius);
+  areaCircle(r) {
+    return pi * sq(r);
   }
 
-  areaEllipse(radius1, radius2) {
-    return pi * radius1 * radius2;
+  areaEllipse(r1, r2) {
+    return pi * r1 * r2;
   }
 
-  areaEquiTriangle(height) {
-    return (sq(height) * sqrt(3)) / 3;
+  areaEquiTriangle(h) {
+    return (sq(h) * sqrt(3)) / 3;
   }
 
-  areaParallelogram(base, height) {
-    return base * height;
+  areaParallelogram(b, h) {
+    return b * h;
   }
 
-  areaRectangle(length, width) {
-    return length * width;
+  areaRectangle(l, w) {
+    return l * w;
   }
 
-  areaRegularPolygon(noSides, base, height) {
-    return (noSides * base * height) / 2;
+  areaRegularPolygon(noSides, b, h) {
+    return (noSides * b * h) / 2;
   }
 
-  areaRhombus(side1, side2) {
-    return (side1 * side2) / 2;
+  areaRhombus(s1, s2) {
+    return (s1 * s2) / 2;
   }
 
-  areaSector(angle, radius) {
-    return (angle * sq(radius)) / 2;
+  areaSector(angle, r) {
+    return (angle * sq(r)) / 2;
   }
 
-  areaSquare(length) {
-    return sq(length);
+  areaSquare(l) {
+    return sq(l);
   }
 
-  areaTrapezoid(side1, side2, height) {
-    return 0.5 * (side1 + side2) * height;
+  areaTrapezoid(s1, s2, h) {
+    return 0.5 * (s1 + s2) * h;
   }
 
-  areaTriangle(base, height) {
-    return 0.5 * base * height;
+  areaTriangle(b, h) {
+    return 0.5 * b * h;
   }
 }
