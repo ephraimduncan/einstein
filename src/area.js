@@ -1,18 +1,10 @@
 const { pi, sqrt, sq } = require('./constants');
 
 class Area {
-  /**
-   * Area of a circle
-   * @param {number} radius
-   */
   areaCircle(radius) {
     return pi * sq(radius);
   }
-  /**
-   * Area of an ellipse
-   * @param {number} radius1
-   * @param {number} radius2
-   */
+
   areaEllipse(radius1, radius2) {
     return pi * radius1 * radius2;
   }
