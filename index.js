@@ -4,4 +4,17 @@ const physics = require('./src/physics');
 const geometry = require('./src/maths/geometry');
 const volume = require('./src/maths/volume');
 
-class Formulae {}
+// New Classes
+const Area = new area();
+const Chemistry = new chemistry();
+const Physics = new physics();
+const Geometry = new geometry();
+const Volume = new volume();
+
+class Formulae {
+  // Area
+  // Geometry
+  // Volume
+  // Chemistry
+  // Physics
+}
