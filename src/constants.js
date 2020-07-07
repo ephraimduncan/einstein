@@ -9,6 +9,9 @@ module.exports = {
   cube: (num) => {
     return Math.pow(num, 3);
   },
+  qube: (num) => {
+    return Math.pow(num, 4);
+  },
   sin: (ang) => {
     return Math.sin(ang);
   },
