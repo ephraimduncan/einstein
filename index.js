@@ -156,10 +156,124 @@ class Formulae {
     return Area.surfaceAreaSphere(radius);
   }
 
-  // Geometry
   // Volume
+  /**
+   * Returns the Spiral of Archimedes in Polar Coordinates
+   * @param {number} a
+   * @param {number} angle
+   */
+  static archmedianSpiral(a, angle) {
+    return Volume.archimedianSpiral(a, angle);
+  }
+
+  /**
+   * Returns the Arclength of a Sector of a Circle
+   * @param {number} radius
+   * @param {number} angle
+   */
+  static arclength(radius, angle) {
+    return Volume.arclength(radius, angle);
+  }
+
+  /**
+   * Returns the Circumference of a Circle
+   * @param {number} radius
+   */
+  static circumferenceOfCircle(radius) {
+    return Volume.perimeterOfCircle(radius);
+  }
+
+  /**
+   * Returns the Perimeter of a Rectangle
+   * @param {number} length
+   * @param {number} width
+   */
+  static perimeterOfRectangle(length, width) {
+    return Volume.perimeterOfRectangle(length, width);
+  }
+
+  /**
+   * Returns the Perimeter of a Regular Polygon
+   * @param {number} numberOfSides
+   * @param {number} sideLength
+   */
+  static perimeterOfRegularPolygon(numberOfSides, sideLength) {
+    return Volume.perimeterOfRegularPolygon(numberOfSides, sideLength);
+  }
+
+  /**
+   * Returns the Perimeter of a Square
+   * @param {number} length
+   */
+  static perimeterOfSquare(length) {
+    return Volume.perimeterOfSquare(length);
+  }
+
+  /**
+   * Returns the Perimeter of a Triangle
+   * @param {*number} side1
+   * @param {*number} side2
+   * @param {*number} side3
+   */
+  static perimeterOfTriangle(side1, side2, side3) {
+    return Volume.perimeterOfTriangle(side1, side2, side3);
+  }
+
+  /**
+   * Returns the Volume of a Cone
+   * @param {number} radius
+   * @param {number} height
+   */
+  static volumeOfCone(radius, height) {
+    return Volume.volumeCone(radius, height);
+  }
+
+  /**
+   * Returns the Volume of a Cube
+   * @param {number} length
+   */
+  static volumeOfCube(length) {
+    return Volume.volumeCube(length);
+  }
+
+  /**
+   * Return the Volume of a Cuboid
+   * @param {number} length
+   * @param {number} width
+   * @param {number} height
+   */
+  static volumeOfCuboid(length, width, height) {
+    return Volume.volumeCuboid(length, width, height);
+  }
+
+  /**
+   * Returns the Volume of a cylinder
+   * @param {number} radius
+   * @param {number} height
+   */
+  static volumeOfCylinder(radius, height) {
+    return Volume.volumeCylinder(radius, height);
+  }
+
+  /**
+   * Returns the Volume of a Pyramid
+   * @param {number} baseArea
+   * @param {number} height
+   */
+  static volumeOfPyramid(baseArea, height) {
+    return Volume.volumePyramid(baseArea, height);
+  }
+
+  /**
+   * Returns the Volume of a Sphere
+   * @param {number} radius
+   */
+  static volumeOfSphere(radius) {
+    return Volume.volumeSphere(radius);
+  }
   // Chemistry
   // Physics
+  // Geometry
 }
 
 Formulae.areaOfTrapezoid();
