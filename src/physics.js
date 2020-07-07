@@ -1,4 +1,4 @@
-const { sq, sin } = require('./constants');
+const { sq, sin, cos } = require('./constants');
 
 class Physics {
   kineticEnergy(m, v) {
@@ -74,7 +74,51 @@ class Physics {
     return m * a;
   }
 
-  ohmsLaw(I, R) {
-    return this.voltageEquation(I, R);
+  phaseDifferenceSingleSlitDefractionPattern(lambda, a, angle) {
+    return ((2 * pi) / lambda) * a * sin(angle);
+  }
+
+  intensity(P, a, A) {
+    return (P * a) / A;
+  }
+
+  energyByHarmonicWave(µ, w, A, x) {
+    return 0.5 * µ * sq(w) * sq(A) * x;
+  }
+
+  powerByHarmonicWave(µ, w, A, v) {
+    return 0.5 * µ * sq(w) * sq(A) * v;
+  }
+
+  harmonicWaveFunction(A, x, lambda, t, T) {
+    return `y(x,t) = ${A}sin[2π(${eval(x / lambda) - eval(t / T)})]`;
+  }
+
+  harmonicWaveFunctionK(A, k, x, v, t) {
+    return `y(x,t) = ${A}sin(${k * (x - v * t)})`;
+  }
+
+  velocityOfDrivenOscillator(A, w, t) {
+    return A * w * cos(w * t);
+  }
+
+  amplitideOfDrivenOscilattor(F, m, w0, w, b) {
+    return F / sqrt(sq(m) * sq(sq(w0) - sq(w)) + sq(b) * sq(w));
+  }
+
+  displacementOfDrivenOscilattor(A, w, t, delta) {
+    return A * cos(w * t + delta);
+  }
+
+  totalEnergyOfSHM(k, A) {
+    return 0.5 * k * sq(A);
+  }
+
+  visousFlow(eta, upsilon, A, z) {
+    return eta * ((upsilon * A) / z);
+  }
+
+  continuityEquation(upsilon, A) {
+    return upsilon * A;
   }
 }
