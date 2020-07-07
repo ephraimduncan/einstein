@@ -239,4 +239,24 @@ class Physics {
   tempretureOfABlackHole(h, c, k, G, M) {
     return ((h * cube(c)) / 8) * (pi * k * G * M);
   }
+
+  density(m, V) {
+    return m / V;
+  }
+
+  plankEnerygyEquation(h, f) {
+    return h * f;
+  }
+
+  speedOfLight(lambda, f) {
+    return lambda * f;
+  }
+
+  speedOfPhoton(lambda, f) {
+    return this.speedOfLight(lambda, f);
+  }
+
+  linearMomentum(m, v) {
+    return m * v;
+  }
 }

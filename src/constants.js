@@ -21,4 +21,7 @@ module.exports = {
   tan: (ang) => {
     return Math.tan(ang);
   },
+  log: (num) => {
+    return Math.log(num);
+  },
 };
