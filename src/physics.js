@@ -1,4 +1,4 @@
-const { sq, sin, cos } = require('./constants');
+const { sq, sin, cos, sqrt, qube, cube } = require('./constants');
 
 class Physics {
   kineticEnergy(m, v) {
@@ -164,5 +164,77 @@ class Physics {
 
   averageAcceleration(deltaV, deltaT) {
     return deltaV / deltaT;
+  }
+
+  resistance() {
+    // "R = \\frac{L}{{\\sigma A}} = \\frac{{\\rho L}}{A}"
+    // Two resistance. One with Resistivity, one with Length
+  }
+
+  electricCurrent(Q, t) {
+    return Q / t;
+  }
+
+  capacitance(Q, V) {
+    return Q / V;
+  }
+
+  accelerationInAnElectricField(q, m, E) {
+    return (q / m) * E;
+  }
+
+  stephanBoltzmannLaw(e, sigma, A, T) {
+    return e * sigma * A * qube(T);
+  }
+
+  thermalResistance(deltaX, k, A) {
+    return deltaX / (k * A);
+  }
+
+  thermalConduction(deltaQ, deltat) {
+    return deltaQ / deltat;
+  }
+
+  speedOfSoundInFluid(B, rho) {
+    return sqrt(B / rho);
+  }
+
+  compressibility(B) {
+    return 1 / B;
+  }
+
+  compressibilityWithP(deltaV, V, P) {
+    return -(deltaV / V / P);
+  }
+
+  bulkModulus(deltaV, V, P) {
+    return -(P / (deltaV / V));
+  }
+
+  poyntingVector(E, B, µ0) {
+    return (E * B) / µ0;
+  }
+
+  electricFieldOfElectromagneticWave(c, B) {
+    return c * B;
+  }
+
+  magneticFieldInsideASolenoid(µ0, n, I) {
+    return µ0 * n * I;
+  }
+
+  torqueOnACurrentLoop(m, B) {
+    return m * B;
+  }
+
+  magneticForceOnAMovingCharge(q, v, B) {
+    return q * v * B;
+  }
+  schwarzschildBlackHoleRadius(G, M, c) {
+    return (2 * G * M) / sq(c);
+  }
+
+  tempretureOfABlackHole(h, c, k, G, M) {
+    return ((h * cube(c)) / 8) * (pi * k * G * M);
   }
 }
