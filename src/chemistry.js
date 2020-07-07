@@ -1,6 +1,6 @@
 const { sqrt, sq, log } = require('./constants');
 
-class Chemistry {
+module.exports = class Chemistry {
   electricCurrent(q, t) {
     return q / t;
   }
@@ -92,4 +92,4 @@ class Chemistry {
   pKb(Kb) {
     return -log(Kb);
   }
-}
+};

@@ -1,6 +1,6 @@
-const { pi, sq, cube } = require('./constants');
+const { pi, sq, cube } = require('../constants');
 
-class Volume {
+module.exports = class Volume {
   volumeCone(r, h) {
     return (pi * sq(r) * h) / 3;
   }
@@ -53,4 +53,4 @@ class Volume {
   arclength(r, angle) {
     return r * angle;
   }
-}
+};

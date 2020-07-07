@@ -1,6 +1,6 @@
-const { sq, sqrt } = require('./constants');
+const { sq, sqrt } = require('../constants');
 
-class Geometry {
+module.exports = class Geometry {
   equationOfLine(m, b) {
     return `y = ${m}x + ${b}`;
   }
@@ -84,4 +84,4 @@ class Geometry {
   eccentricityOfAnHyperbola(a, b) {
     return sqrt(sq(a) + sq(b)) / a;
   }
-}
+};

@@ -1,6 +1,6 @@
-const { pi, sqrt, sq, sin } = require('./constants');
+const { pi, sqrt, sq, sin } = require('../constants');
 
-class Area {
+module.exports = class Area {
   areaCircle(r) {
     return pi * sq(r);
   }
@@ -64,4 +64,4 @@ class Area {
   areaOfArbitraryTriangle(a, b, C) {
     return 0.5 * a * b * sin(C);
   }
-}
+};

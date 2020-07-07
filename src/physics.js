@@ -1,6 +1,6 @@
 const { sq, sin, cos, sqrt, qube, cube } = require('./constants');
 
-class Physics {
+module.exports = class Physics {
   kineticEnergy(m, v) {
     return 0.5 * m * sq(v);
   }
@@ -259,4 +259,4 @@ class Physics {
   linearMomentum(m, v) {
     return m * v;
   }
-}
+};
