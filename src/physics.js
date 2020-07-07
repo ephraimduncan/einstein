@@ -121,4 +121,48 @@ class Physics {
   continuityEquation(upsilon, A) {
     return upsilon * A;
   }
+
+  shearStress(Fs, A) {
+    return Fs / A;
+  }
+
+  shearStrain(x, L) {
+    return x / L;
+  }
+
+  shearModulus(shearStress, shearStrain) {
+    return shearStress / shearStrain;
+  }
+
+  centripetalAcceleration(v, r) {
+    return sq(v) / r;
+  }
+
+  acceleration(v, t) {
+    return v / t;
+  }
+
+  velocity(d, t) {
+    return d / t;
+  }
+
+  velocityWithDisplacement(v0, a, x) {
+    return sqrt(sq(v0) + 2 * a * x);
+  }
+
+  velocityWithAcceleration(v0, a, t) {
+    return v0 + a * t;
+  }
+
+  displacement(x, x0) {
+    return x - x0;
+  }
+
+  displacementWithAcceleration(v0, a, t) {
+    return v0 * t + 0.5 * a * sq(t);
+  }
+
+  averageAcceleration(deltaV, deltaT) {
+    return deltaV / deltaT;
+  }
 }
