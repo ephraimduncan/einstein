@@ -5,6 +5,8 @@ class Physics {
     return 0.5 * m * sq(v);
   }
 
+  potentialEnergy() {}
+
   refractiveIndex(i, r, d, ad) {
     let index;
     if (i && r) {
